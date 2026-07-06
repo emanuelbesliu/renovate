@@ -110,8 +110,8 @@ importers:
         specifier: 5.12.1
         version: 5.12.1(@opentelemetry/api@1.9.1)
       '@renovatebot/detect-tools':
-        specifier: 4.0.8
-        version: 4.0.8
+        specifier: 4.0.9
+        version: 4.0.9
       '@renovatebot/good-enough-parser':
         specifier: 2.0.1
         version: 2.0.1
@@ -1786,8 +1786,8 @@ packages:
       '@opentelemetry/api':
         optional: true
 
-  '@renovatebot/detect-tools@4.0.8':
-    resolution: {integrity: sha512-beysRwqyNh/6ETeeF6Qr1q9fVMc+j+oXT5vh2PaeX+ESm8j9Sw5ngtTxy5dHNZV+4rqywdz0qwEos623bB6Gew==}
+  '@renovatebot/detect-tools@4.0.9':
+    resolution: {integrity: sha512-Y4j3SnUk0LZgmB1mrVfYZXBd+Oru6IiyrhoBZV5UjL4OwBLXuPMoOcVMWSD9a55xf0sV+SzaowP5dOoezqdB+w==}
     engines: {node: '>=22.12.0', pnpm: '>=10.0.0'}
 
   '@renovatebot/good-enough-parser@2.0.1':
@@ -3133,6 +3133,10 @@ packages:
 
   fs-extra@11.3.5:
     resolution: {integrity: sha512-eKpRKAovdpZtR1WopLHxlBWvAgPny3c4gX1G5Jhwmmw4XJj0ifSD5qB5TOo8hmA0wlRKDAOAhEE1yVPgs6Fgcg==}
+    engines: {node: '>=14.14'}
+
+  fs-extra@11.3.6:
+    resolution: {integrity: sha512-w8ZNZr2mKIc7qeNaQ9AVPT1+iFaI+Avd4xudVOvdDJ8VytREi1Ft5Ih7hd9jjehod8vAM5GMsfQ/TpPf4EyoEA==}
     engines: {node: '>=14.14'}
 
   fs-minipass@3.0.3:
@@ -6912,9 +6916,9 @@ snapshots:
     optionalDependencies:
       '@opentelemetry/api': 1.9.1
 
-  '@renovatebot/detect-tools@4.0.8':
+  '@renovatebot/detect-tools@4.0.9':
     dependencies:
-      fs-extra: 11.3.5
+      fs-extra: 11.3.6
       toml-eslint-parser: 1.0.3
       upath: 3.0.7
       zod: 4.4.3
@@ -8286,6 +8290,12 @@ snapshots:
       universalify: 2.0.1
 
   fs-extra@11.3.5:
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.2.1
+      universalify: 2.0.1
+
+  fs-extra@11.3.6:
     dependencies:
       graceful-fs: 4.2.11
       jsonfile: 6.2.1
